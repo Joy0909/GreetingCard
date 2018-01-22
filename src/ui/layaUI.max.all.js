@@ -27,6 +27,7 @@ var ProgressUI=(function(_super){
 		function ProgressUI(){
 			
 		    this.progress=null;
+		    this.text=null;
 
 			ProgressUI.__super.call(this);
 		}
@@ -34,12 +35,13 @@ var ProgressUI=(function(_super){
 		CLASS$(ProgressUI,'ui.ProgressUI',_super);
 		var __proto__=ProgressUI.prototype;
 		__proto__.createChildren=function(){
-		    
+		    			View.regComponent("Text",laya.display.Text);
+
 			laya.ui.Component.prototype.createChildren.call(this);
 			this.createView(ProgressUI.uiView);
 
 		}
 
-		ProgressUI.uiView={"type":"View","props":{"width":360,"height":640},"child":[{"type":"ProgressBar","props":{"y":308,"x":30,"width":300,"var":"progress","value":0,"skin":"comp/progress.png","height":24}}]};
+		ProgressUI.uiView={"type":"View","props":{"width":360,"height":640},"child":[{"type":"ProgressBar","props":{"y":308,"x":30,"width":300,"var":"progress","value":0,"skin":"comp/progress.png","height":24}},{"type":"Text","props":{"y":278,"x":160,"var":"text","text":"0%","fontSize":24,"color":"#e72623","bold":true,"align":"center"}}]};
 		return ProgressUI;
 	})(View);

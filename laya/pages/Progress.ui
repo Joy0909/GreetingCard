@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":3,
+    "selecteID":4,
     "props":{"width":360,"sceneColor":"#ffffff","height":640},
     "nodeParent":-1,
     "label":"View",
@@ -22,6 +22,19 @@
             "isAniNode":true,
             "hasChild":false,
             "compId":3,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Text",
+            "props":{"y":278,"x":160,"var":"text","text":"0%","fontSize":24,"color":"#e72623","bold":true,"align":"center"},
+            "nodeParent":1,
+            "label":"Text(text)",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":4,
             "child":[
                 ]
         }],

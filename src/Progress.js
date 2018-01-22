@@ -11,6 +11,7 @@ var Progress = (function (_super) {
 
 	function updateProgress() {
 		this.progress.value += .05
+		this.text.text = this.progress.value.toFixed(2) + '%'
 		if(this.progress.value >= 1) {
 			this.removeSelf()
 			

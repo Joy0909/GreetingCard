@@ -1,13 +1,9 @@
-var Progress = (function (_super) {
-	function Progress() {
-		Progress.super(this)
+Laya.class(Progress, 'Progress', ui.ProgressUI)
 
-		Laya.timer.frameLoop(6, this, updateProgress)
-	}
-	
-	Laya.class(Progress, 'Progress', _super)
+function Progress() {
+	Progress.super(this)
 
-	// var proto = Progress.prototype
+	Laya.timer.frameLoop(6, this, updateProgress)
 
 	function updateProgress() {
 		var value = this.progress.value += .05
@@ -19,6 +15,4 @@ var Progress = (function (_super) {
 			Laya.stage.addChild(GreetingCard.main)
 		}
 	}
-	
-	return Progress
-})(ui.ProgressUI)
+}

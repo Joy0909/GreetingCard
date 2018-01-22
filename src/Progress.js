@@ -7,12 +7,12 @@ var Progress = (function (_super) {
 	
 	Laya.class(Progress, 'Progress', _super)
 
-	var proto = Progress.prototype
+	// var proto = Progress.prototype
 
 	function updateProgress() {
-		this.progress.value += .05
-		this.text.text = this.progress.value.toFixed(2) + '%'
-		if(this.progress.value >= 1) {
+		var value = this.progress.value += .05
+		this.text.text = (value * 100).toFixed() + '%'
+		if(value >= 1) {
 			this.removeSelf()
 			
 			GreetingCard.main = new Main()

@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":3,
+    "selectedBox":3,
+    "selecteID":64,
     "props":{"y":0,"x":0,"width":640,"var":"main","sceneColor":"#ffffff","height":1080},
     "nodeParent":-1,
     "label":"View(main)",
@@ -18,13 +18,27 @@
             "props":{"y":0,"var":"view0","right":0,"left":0,"height":1080},
             "nodeParent":1,
             "label":"View(view0)",
-            "isOpen":false,
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":3,
             "child":[
                 {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":442,"x":1,"width":640,"skin":"ppy/0_back.png","height":640},
+                    "nodeParent":3,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":64,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
                     "type":"Sprite",
                     "props":{"y":50,"x":535,"width":75,"height":60},
                     "nodeParent":3,
@@ -49,8 +63,9 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
-                    "props":{"y":18,"x":593,"width":17,"height":22},
+                    "props":{"y":19,"x":593,"width":17,"skewY":0,"rotation":-1,"pivotY":0,"height":22},
                     "nodeParent":3,
                     "label":"Sprite",
                     "isOpen":false,
@@ -73,6 +88,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Text",
                     "props":{"y":100,"x":40,"text":"日期","fontSize":30,"color":"#4c67e7"},
                     "nodeParent":3,
@@ -85,6 +101,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Text",
                     "props":{"y":172,"x":40,"text":"你选择了零零汽","fontSize":30,"color":"black"},
                     "nodeParent":3,
@@ -97,6 +114,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Text",
                     "props":{"y":244,"x":40,"text":"零零汽陪你度过了","fontSize":30,"color":"black"},
                     "nodeParent":3,
@@ -109,6 +127,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Text",
                     "props":{"y":247,"x":284,"text":"100","fontSize":30,"color":"#ffbf00","align":"center"},
                     "nodeParent":3,
@@ -121,6 +140,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Text",
                     "props":{"y":244,"x":340,"text":"个日日夜夜","fontSize":30,"color":"black"},
                     "nodeParent":3,
@@ -133,6 +153,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Text",
                     "props":{"y":970,"x":224,"text":"上滑开启年度账单","fontSize":24,"color":"black","align":"center"},
                     "nodeParent":3,
@@ -472,7 +493,6 @@
             "compId":53,
             "child":[
                 {
-                    "x":30,
                     "type":"Text",
                     "props":{"y":100,"x":40,"text":"2017年","fontSize":30,"color":"#566FE8"},
                     "nodeParent":53,
@@ -485,7 +505,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Text",
                     "props":{"y":172,"x":40,"text":"你一共在零零汽上反馈了","fontSize":30,"color":"black"},
                     "nodeParent":53,
@@ -499,7 +518,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Text",
                     "props":{"y":172,"x":372,"text":"10","fontSize":30,"color":"#ffbf00"},
                     "nodeParent":53,
@@ -513,7 +531,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Text",
                     "props":{"y":172,"x":410,"text":"个问题","fontSize":30,"color":"black"},
                     "nodeParent":53,
@@ -527,7 +544,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Text",
                     "props":{"y":247,"x":40,"text":"感谢你的细心反馈帮助我们未来做的更好","fontSize":30,"color":"black"},
                     "nodeParent":53,

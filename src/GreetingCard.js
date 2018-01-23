@@ -12,7 +12,7 @@
 		Laya.stage.bgColor = "#fff"
 		
 		// Laya 加载 UI，路径，回调，进度，加载资源类型
-		Laya.loader.load('res/atlas/comp.atlas', Laya.Handler.create(this, onLoaded), null, Laya.loader.ATLAS)
+		Laya.loader.load('res/atlas/ppy.atlas', Laya.Handler.create(this, onLoaded), null, Laya.loader.ATLAS)
 	}()
 
 	function onLoaded() {

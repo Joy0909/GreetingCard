@@ -1,6 +1,6 @@
 ﻿(function GreetingCard() {
 	!function init() {
-		Laya.init(360, 720)
+		Laya.init(640, 1080)
 		// 是否自动缩放
 		Laya.stage.scaleMode = Laya.Stage.SCALE_SHOWALL
 		// 水平居中
